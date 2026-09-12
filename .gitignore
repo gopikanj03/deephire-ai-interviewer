@@ -1,0 +1,50 @@
+# ---------- Secrets ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------- Dependencies ----------
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+*.egg-info/
+
+# ---------- Next.js ----------
+.next/
+out/
+build/
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# ---------- Datasets ----------
+# FER2013 emotion dataset (~36k images). Public dataset, not project code.
+# See python-backend/README.md for download instructions.
+python-backend/data/
+
+# ---------- Model artifacts ----------
+# Mid-training checkpoint; the trained model emotion_model.h5 IS committed.
+python-backend/emotion_model_checkpoint.h5
+
+# ---------- Editors / OS ----------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---------- Logs ----------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
